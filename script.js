@@ -57,7 +57,7 @@ function studentRegister() {
     return;
   }
 
-  fetch("http://localhost:4567/student/register", {
+ fetch("https://your-java-backend.onrender.com/student/register", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams({ email, phone, password, name })
