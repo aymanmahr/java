@@ -7,29 +7,29 @@
 <body>
   <div class="container">
     <h2>Register as:</h2>
-    <button onclick="showStudentForm()">Student</button>
-    <button onclick="showAdminForm()">Admin</button>
+    <button type="button" onclick="showStudentForm()">Student</button>
+    <button type="button" onclick="showAdminForm()">Admin</button>
 
     <div id="studentForm" style="display:none">
       <h3>Student Registration</h3>
-      <input id="regEmail" placeholder="Email">
-      <input id="regPhone" placeholder="Phone Number">
-      <input id="regPassword" placeholder="Password">
-      <input id="regName" placeholder="Name">
-      <button onclick="studentRegister()">Submit</button>
+      <input id="regEmail" placeholder="Email" />
+      <input id="regPhone" placeholder="Phone Number" />
+      <input id="regPassword" type="password" placeholder="Password" />
+      <input id="regName" placeholder="Name" />
+      <button type="button" onclick="studentRegister()">Submit</button>
       <p id="registerMsg"></p>
     </div>
 
     <div id="adminForm" style="display:none">
       <h3>Admin Registration</h3>
-      <input id="adminEmail" placeholder="Email">
-      <input id="adminPhone" placeholder="Phone Number">
-      <input id="adminPassword" placeholder="Password">
-      <input id="adminClubId" placeholder="Club ID">
-      <input id="adminClubName" placeholder="Club Name">
-      <input id="adminDescription" placeholder="Description">
-      <input id="adminContactEmail" placeholder="Contact Email">
-      <button onclick="adminRegister()">Submit</button>
+      <input id="adminEmail" placeholder="Email" />
+      <input id="adminPhone" placeholder="Phone Number" />
+      <input id="adminPassword" type="password" placeholder="Password" />
+      <input id="adminClubId" placeholder="Club ID" />
+      <input id="adminClubName" placeholder="Club Name" />
+      <input id="adminDescription" placeholder="Description" />
+      <input id="adminContactEmail" placeholder="Contact Email" />
+      <button type="button" onclick="adminRegister()">Submit</button>
       <p id="adminMsg"></p>
     </div>
   </div>
